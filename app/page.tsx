@@ -79,7 +79,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center text-neutral-200 items-center h-screen w-screen overflow-x-hidden">
-      <SearchComp rescount={rescount} setError={setError} setResults={setResults} setResCount={setResCount} setSearchTerm={setSearchTerm} data={data} />
+      <SearchComp rescount={rescount} data={data} setResCount={setResCount} setSearchTerm={setSearchTerm} setError={setError} setResults={setResults} />
       <div className="flex-5/6 flex flex-col bg-slate-900 w-full h-full justify-center items-center overflow-y-auto">
         <Results results={results} err={err} searchterm={searchterm} />
       </div>
