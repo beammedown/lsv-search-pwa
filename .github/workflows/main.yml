@@ -8,13 +8,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
       - run: bun install
-        working-directory: .
       - run: bun run build
-        working-directory: .
       - name: Deploy to Github pages
         uses: peaceiris/actions-gh-pages@v3
         with:
