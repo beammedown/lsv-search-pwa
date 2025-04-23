@@ -11,10 +11,10 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-const APP_NAME = "PWA App";
-const APP_DEFAULT_TITLE = "My Awesome PWA App";
-const APP_TITLE_TEMPLATE = "%s - PWA App";
-const APP_DESCRIPTION = "Best PWA app in the world!";
+const APP_NAME = "LSV Search";
+const APP_DEFAULT_TITLE = "Better Rechtssuche";
+const APP_TITLE_TEMPLATE = "%s - PWA";
+const APP_DESCRIPTION = "vielleicht bald noch besser";
 
 export const metadata: Metadata = {
   applicationName: APP_NAME,

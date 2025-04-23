@@ -27,7 +27,7 @@ export default function Home() {
   async function getDataFetch(): Promise<lawdata[] | null> {
     try {
 
-      const res = await fetch('/general.json');
+      const res = await fetch('/lsv-search-pwa/general.json');
       const jso: lawdata[] = await res.json();
       setData(jso)
       return jso;
