@@ -3,6 +3,7 @@ import { PHASE_DEVELOPMENT_SERVER, PHASE_PRODUCTION_BUILD } from "next/constants
 module.exports = async (phase: string) => {
   const nextConfig: import("next").NextConfig = {
     output: 'export',
+    basePath: '/lsv-search-pwa'
   };
 
   if (phase === PHASE_DEVELOPMENT_SERVER || phase === PHASE_PRODUCTION_BUILD) {
